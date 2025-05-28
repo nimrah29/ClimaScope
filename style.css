@@ -1,56 +1,100 @@
-*{
-	margin : 0%;
-	padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
-.container{
-	width:100%;
-	height:100vh;
-	background-color: burlywood;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+body {
+  background-color: burlywood;
 }
 
-.weather_container{
-	color: black;
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.temp{
-	font-size: 4.5rem;
+.weather_container {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
-.time_location{
-	font-size: 2rem;
-
-}
-.condition{
-	margin: 0.5rem;
-	margin-left: 0.2rem;
+.temp p {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #333;
 }
 
-nav{
-	height:100px ;
-	margin: 5rem;
+.time_location {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #555;
 }
 
-.search_area{
-	padding:1rem 0;
-	outline:none;
-	border: none;
-	color: black;
-	background-color: transparent;
-	font-size: 1.1rem;
-	border-bottom: 2px solid white;
-	width: 98%;
+.condition {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: #666;
 }
 
-nav form button{
-	padding: 1rem;
-	background-color: white;
-	margin-top: 1rem;
-	font-size: 1.1rem;
-	outline: none;
-	border: none;
-	cursor: pointer;
+nav {
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.search_area {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: none;
+  border-bottom: 2px solid #333;
+  background-color: transparent;
+  color: #000;
+}
+
+form button {
+  padding: 0.8rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background-color: #555;
+}
+
+/* Responsive Design */
+@media (min-width: 600px) {
+  .weather_container {
+    max-width: 500px;
+  }
+
+  .temp p {
+    font-size: 5rem;
+  }
+
+  .time_location,
+  .condition {
+    font-size: 1.4rem;
+  }
 }
