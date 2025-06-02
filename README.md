@@ -16,13 +16,13 @@ Features:
 
 Tech Stack:
 
-HTML5- for structure
+- HTML5- for structure
 
-CSS3- with media queries for styling and responsiveness
+- CSS3- with media queries for styling and responsiveness
 
-JavaScript- for API integration and dynamic content update
+- JavaScript- for API integration and dynamic content update
 
-WeatherAPI- for fetching weather data
+- WeatherAPI- for fetching weather data
 
 How It Works:
 
