@@ -10,7 +10,8 @@ document.addEventListener('DOMContentLoaded', function() {
     let target = 'Udupi'; // default city
 
     const fetchResults = async (targetLocation) => {
-    let url = `http://api.weatherapi.com/v1/current.json?key=8f1c781bb8a94694b71171336242203&q=${targetLocation}&aqi=no`;
+   let url = `https://api.weatherapi.com/v1/current.json?key=8f1c781bb8a94694b71171336242203&q=${targetLocation}&aqi=no`;
+
 
     try {
         const res = await fetch(url);
