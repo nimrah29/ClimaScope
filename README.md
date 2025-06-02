@@ -1,4 +1,4 @@
-ClimaScope 
+#ClimaScope 
 
 ClimaScope is a simple, elegant, and responsive weather application built using HTML, CSS, and JavaScript. It fetches real-time weather data using WeatherAPI and dynamically displays the current temperature, location, time, and weather condition.
 
